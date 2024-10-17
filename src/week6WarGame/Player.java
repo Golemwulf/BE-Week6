@@ -14,13 +14,7 @@ public class Player {
 	        score = 0;
 	    }
 
-	    public void describe() { 
-	        System.out.println(name + " has the following cards:"); 
-	        for (Card card : hand) {
-	            card.describe();
-	        }
-	    }
-
+//	    
 	    public Card flip() { //plays the next card in the hand
 	        if (hand.isEmpty()) {
 	            return null;

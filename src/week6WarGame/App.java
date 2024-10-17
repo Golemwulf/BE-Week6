@@ -9,14 +9,19 @@ public class App {
 
 	        deck.shuffle();
 
-	        for (int i = 0; i < 52; i++) {
+	        for (int i = 0; i < 52; i++) { //this loop evenly deals the deck between the two players. 
 	            if (i % 2 == 0) {
 	                player1.draw(deck);
 	            } else {
 	                player2.draw(deck);
 	            }
 	        }
-
+	        /**
+	         * The loop below and the coding afterwards are set up so each player shows a card and a winner is determined. 
+	         * When the winner is determined, 1 point will be added to that player's score. 
+	         * This cycle repeats until the players are out of cards.
+	         * The program then determines which player has the highest total points and declares a final winner. 
+	         */
 	        for (int i = 0; i < 26; i++) {
 	            Card card1 = player1.flip();
 	            Card card2 = player2.flip();
